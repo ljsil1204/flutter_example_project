@@ -34,29 +34,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-class MyHomePage extends StatelessWidget {
-  final String title;
-  MyHomePage({required this.title});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      // body: const Center(child: Text('Hello, flutter'))
-      body: Container(
-          child: Text("Hellow, flutter!"),
-          padding: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
-          width: 300,
-          height: 300,
-          color: Colors.blue
-          // padding: EdgeInsets.all(30),
-          // padding: EdgeInsets.fromLTRB(left: 10, top: 60, right: 90, bottom: 20),
-          // padding: EdgeInsets.only(left: 10),
-          ),
-      // body: Padding(child: Text("Hello"), padding: EdgeInsets.all(30)),
-    );
-  }
-}
