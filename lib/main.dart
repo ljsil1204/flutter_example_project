@@ -34,3 +34,17 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class MyHomePage extends StatelessWidget {
+  final String title;
+  MyHomePage({required this.title});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+    );
+  }
+}
