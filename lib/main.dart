@@ -47,7 +47,9 @@ class MyHomePage extends StatelessWidget {
       ),
       body: Center(
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          // mainAxisAlignment: MainAxisAlignment.spaceAround,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [Text("1. hi"), Text("2. hi2"), Text("3. hi3")],
         ),
       ),
