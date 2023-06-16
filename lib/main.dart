@@ -37,13 +37,26 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatelessWidget {
   final String title;
+
+  List<Widget> myChildren = [];
+
   MyHomePage({required this.title});
 
   @override
   Widget build(BuildContext context) {
+    for (var i = 0; i < 50; i++) {
+      myChildren.add(Text("hi", style: TextStyle(fontSize: 20)));
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+      ),
+      body: Center(
+        child: ListView(
+          scrollDirection: Axis.horizontal,
+          children: myChildren,
+        ),
       ),
       // body: Center(
       //   child: Row(
