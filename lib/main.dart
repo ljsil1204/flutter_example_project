@@ -45,6 +45,12 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
+      body: Center(
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [Text("1. hi"), Text("2. hi2"), Text("3. hi3")],
+        ),
+      ),
       // body: Center(
       //   child: Column(
       //     mainAxisAlignment: MainAxisAlignment.center,
