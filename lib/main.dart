@@ -52,6 +52,14 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
+      body: Center(
+        child: ListView.builder(
+            itemCount: 5,
+            itemBuilder: (BuildContext context, int index) {
+              return Text('${index + 1}' + ' hi',
+                  style: TextStyle(fontSize: 20));
+            }),
+      ),
       // body: Center(
       //   child: ListView(
       //     scrollDirection: Axis.horizontal,
