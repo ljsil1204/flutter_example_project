@@ -45,23 +45,25 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            "1. first",
-            style: TextStyle(fontSize: 20),
-          ),
-          Text(
-            "2. second",
-            style: TextStyle(fontSize: 14),
-          ),
-          Text(
-            "3. third",
-            style: TextStyle(fontSize: 10),
-          )
-        ],
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "1. first",
+              style: TextStyle(fontSize: 20),
+            ),
+            Text(
+              "2. second",
+              style: TextStyle(fontSize: 14),
+            ),
+            Text(
+              "3. third",
+              style: TextStyle(fontSize: 10),
+            )
+          ],
+        ),
       ),
       // body: const Center(
       //     child: Text(
