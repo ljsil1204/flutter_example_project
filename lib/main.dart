@@ -58,7 +58,9 @@ class MyHomePage extends StatelessWidget {
       //     ),
       // body: Padding(child: Text("Hello"), padding: EdgeInsets.all(30)),
       body: Center(
-        child: Image.asset('images/logo.png'),
+        // child: Image.asset('images/logo.png'),
+        child: Image.network(
+            "https://funkylife.in/wp-content/uploads/2023/03/good-morning-image-531.jpg"),
       ),
     );
   }
