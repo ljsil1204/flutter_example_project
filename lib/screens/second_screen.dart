@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SecondScreen extends StatelessWidget {
+  final String screenData;
+  SecondScreen({required this.screenData});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,7 +12,7 @@ class SecondScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("second screen"),
+            Text("second screen : " + screenData),
             OutlinedButton(
                 onPressed: () {
                   Navigator.of(context).pop();
