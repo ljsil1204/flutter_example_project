@@ -52,6 +52,17 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
+      body: Center(
+        child: Column(children: [
+          TextButton(onPressed: () {}, child: Text("text button")),
+          Padding(padding: EdgeInsets.all(20)),
+          ElevatedButton(onPressed: () {}, child: Text("elevated button")),
+          Padding(padding: EdgeInsets.all(20)),
+          OutlinedButton(onPressed: () {}, child: Text("outline button")),
+          Padding(padding: EdgeInsets.all(20)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.star))
+        ]),
+      ),
       // body: Center(
       //   child: Stack(
       //     children: [
