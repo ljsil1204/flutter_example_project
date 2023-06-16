@@ -52,12 +52,12 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
-        child: ListView(
-          scrollDirection: Axis.horizontal,
-          children: myChildren,
-        ),
-      ),
+      // body: Center(
+      //   child: ListView(
+      //     scrollDirection: Axis.horizontal,
+      //     children: myChildren,
+      //   ),
+      // ),
       // body: Center(
       //   child: Row(
       //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
