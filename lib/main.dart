@@ -48,7 +48,12 @@ class MyHomePage extends StatelessWidget {
         body: const Center(
             child: Text(
           'Hello, flutter',
-          style: TextStyle(fontSize: 40, color: Colors.blue),
+          style: TextStyle(
+            fontSize: 40,
+            color: Colors.blue,
+            fontFamily: 'NotoSansKR',
+            fontWeight: FontWeight.bold,
+          ),
         ))
         // body: Container(
         //     child: Text("Hellow, flutter!"),
