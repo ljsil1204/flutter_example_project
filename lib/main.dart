@@ -42,26 +42,30 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      // body: const Center(child: Text('Hello, flutter'))
-      // body: Container(
-      //     child: Text("Hellow, flutter!"),
-      //     padding: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
-      //     width: 300,
-      //     height: 300,
-      //     color: Colors.blue
-      //     // padding: EdgeInsets.all(30),
-      //     // padding: EdgeInsets.fromLTRB(left: 10, top: 60, right: 90, bottom: 20),
-      //     // padding: EdgeInsets.only(left: 10),
-      //     ),
-      // body: Padding(child: Text("Hello"), padding: EdgeInsets.all(30)),
-      body: Center(
-        // child: Image.asset('images/logo.png'),
-        child: Image.network(
-            "https://funkylife.in/wp-content/uploads/2023/03/good-morning-image-531.jpg"),
-      ),
-    );
+        appBar: AppBar(
+          title: Text(title),
+        ),
+        body: const Center(
+            child: Text(
+          'Hello, flutter',
+          style: TextStyle(fontSize: 40, color: Colors.blue),
+        ))
+        // body: Container(
+        //     child: Text("Hellow, flutter!"),
+        //     padding: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
+        //     width: 300,
+        //     height: 300,
+        //     color: Colors.blue
+        //     // padding: EdgeInsets.all(30),
+        //     // padding: EdgeInsets.fromLTRB(left: 10, top: 60, right: 90, bottom: 20),
+        //     // padding: EdgeInsets.only(left: 10),
+        //     ),
+        // body: Padding(child: Text("Hello"), padding: EdgeInsets.all(30)),
+        // body: Center(
+        //   // child: Image.asset('images/logo.png'),
+        //   child: Image.network(
+        //       "https://funkylife.in/wp-content/uploads/2023/03/good-morning-image-531.jpg"),
+        // ),
+        );
   }
 }
