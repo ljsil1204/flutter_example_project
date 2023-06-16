@@ -6,6 +6,20 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  int count = 0;
+
+  void increase() {
+    setState(() {
+      count = count + 1;
+    });
+  }
+
+  void decrease() {
+    setState(() {
+      count = count - 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,15 +30,15 @@ class _FirstScreenState extends State<FirstScreen> {
         child: Column(
           children: [
             Text(
-              "count : ",
+              "count : $count",
               style: TextStyle(fontSize: 20),
             ),
             Padding(padding: EdgeInsets.all(20)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                ElevatedButton(onPressed: () {}, child: Text("-down")),
-                ElevatedButton(onPressed: () {}, child: Text("+up"))
+                ElevatedButton(onPressed: decrease, child: Text("-down")),
+                ElevatedButton(onPressed: increase, child: Text("+up"))
               ],
             )
           ],
