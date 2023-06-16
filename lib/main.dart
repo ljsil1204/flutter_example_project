@@ -52,6 +52,21 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
+      body: Center(
+        child: Stack(
+          children: [
+            Image.asset('images/logo.png'),
+            Positioned(
+                top: 40,
+                left: 40,
+                child: Image.network(
+                  "https://funkylife.in/wp-content/uploads/2023/03/good-morning-image-531.jpg",
+                  width: 100,
+                  height: 100,
+                ))
+          ],
+        ),
+      ),
       // body: Center(
       //   child: ListView.builder(
       //       itemCount: 5,
